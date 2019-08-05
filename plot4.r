@@ -18,7 +18,7 @@ gap<-as.numeric(as.character(fdata$Global_active_power))
 voltage<-as.numeric(as.character(fdata$Voltage))
 grp<-as.numeric(as.character(fdata$Global_reactive_power))
 
-png(filename="plot4")
+png(filename="plot4.png")
 par(mfrow=c(2,2))
 plot(datetime,gap,type="l",ylab="Global Active Power (kilowatts)",xlab=NA)
 plot(datetime,voltage,type="l",ylab="voltage",xlab="datetime")

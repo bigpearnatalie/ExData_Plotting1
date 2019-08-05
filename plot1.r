@@ -5,6 +5,6 @@ names(fdata)<-c("Date",	"Time","Global_active_power","Global_reactive_power","Vo
 gap<-as.numeric(as.character(fdata$Global_active_power))
 
 
-png(filename="plot1")
+png(filename="plot1.png")
 hist(gap,col="red",xlab="Global Active Power (kilowatts)", main="Global Active Power")
 dev.off()

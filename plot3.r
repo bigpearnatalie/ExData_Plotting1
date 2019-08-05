@@ -14,7 +14,7 @@ sub1<-as.numeric(as.character(fdata$Sub_metering_1))
 sub2<-as.numeric(as.character(fdata$Sub_metering_2))
 sub3<-as.numeric(as.character(fdata$Sub_metering_3))
 
-png(filename="plot3")
+png(filename="plot3.png")
 plot(datetime,sub1,col="black",type="l",xlab="",ylab="Engergy sub metring")
 lines(datetime,sub2,col="red",type="l")
 lines(datetime,sub3,col="blue",type="l")

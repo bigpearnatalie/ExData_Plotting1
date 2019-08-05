@@ -11,6 +11,6 @@ ftime<-as.character(ftime)
 datetime<-as.POSIXct(paste(fdate, ftime), format="%d %m %Y %H:%M:%S")
 
 gap<-as.numeric(as.character(fdata$Global_active_power))
-png(filename="plot2")
+png(filename="plot2.png")
 plot(datetime,gap,type="l",ylab="Global Active Power (kilowatts)",xlab=NA)
 dev.off()
