@@ -8,7 +8,7 @@ fdate<-gsub("/", ' ', fdate)
 ftime<-fdata$Time
 ftime<-as.character(ftime)
 
-datetime<-as.POSIXct(paste(fdate, ftime), format="%d %d %Y %H:%M:%S")
+datetime<-as.POSIXct(paste(fdate, ftime), format="%d %m %Y %H:%M:%S")
 
 sub1<-as.numeric(as.character(fdata$Sub_metering_1))
 sub2<-as.numeric(as.character(fdata$Sub_metering_2))
